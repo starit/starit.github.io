@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="EOS, BitPortal, blockchain, ethereum, bitcoin, Jamie Cheng, Starit" />
 
 
 
@@ -160,7 +160,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">科学与艺术的那个交集</p>
+        <h1 class="site-subtitle" itemprop="description">科学与艺术的那个交集</h1>
       
   </div>
 
@@ -190,12 +190,22 @@
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            归档
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            站点地图
           </a>
         </li>
       
@@ -232,6 +242,171 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://starit.me/2018/05/02/learning_eos_0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Starit">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="群星尽头">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/02/learning_eos_0/" itemprop="url">EOS学习0: 资料来源和阅读顺序</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T08:07:00+08:00">
+                2018-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近在研究EOS，整理了一下相关的资料来源和我认为合适的阅读顺序，分享出来，以便想要了解EOS的朋友们参考。资料主要以英文为主，中文翻译在网上翻一下就能找到，但或多或少都有些翻译不到位的地方，因此建议有能力的话以阅读英文文档为主。</p>
+<h2 id="资料来源"><a href="#资料来源" class="headerlink" title="资料来源"></a>资料来源</h2><p>其中主要的信息来源是官网或半官方性质的社区：</p>
+<ul>
+<li><p><a href="https://eos.io/" target="_blank" rel="noopener">EOS官网</a></p>
+</li>
+<li><p><a href="https://github.com/EOSIO/eos/" target="_blank" rel="noopener">官方Github及其文档</a>，包含README以及里面提到的多个链接</p>
+</li>
+<li><p><a href="https://forums.eosgo.io/" target="_blank" rel="noopener">EOS Go社区</a></p>
+</li>
+</ul>
+<p>当然还有BM的twitter和EOS的telegram，不过这种资料更多是预告或讨论性质，最终是要归为文档或代码的。</p>
+<h2 id="阅读顺序"><a href="#阅读顺序" class="headerlink" title="阅读顺序"></a>阅读顺序</h2><h3 id="1-白皮书"><a href="#1-白皮书" class="headerlink" title="1. 白皮书"></a>1. 白皮书</h3><p>学习EOS，最先要读的当然是EOS的白皮书，但要全部读懂技术白皮书也是有点难度的，因此可以先简单过一下，对一些基本原则和名词在脑袋里形成概念。</p>
+<ul>
+<li><p><a href="https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md" target="_blank" rel="noopener">英文版技术白皮书v2</a>（中文白皮书在同一个repo下）</p>
+</li>
+<li><p><a href="https://medium.com/eosio/start-an-eos-meetup-in-your-community-761be355fce" target="_blank" rel="noopener">存储白皮书</a></p>
+</li>
+</ul>
+<h3 id="2-启动流程"><a href="#2-启动流程" class="headerlink" title="2. 启动流程"></a>2. 启动流程</h3><p>EOS的全称是Entrepreneurial Operating System，既然是操作系统，其启动程序当然叫做BIOS啦。EOS的启动流程主要是为了选举出超级节点，并开始出块。了解其流程可阅读官方medium上的文章以及github中的代码（最新）。注意：该流程并非最后流程，最终细则还没有出来。</p>
+<ul>
+<li><a href="https://medium.com/eosio/bios-boot-eosio-blockchain-2b58b8a978a1" target="_blank" rel="noopener">medium上的文章</a></li>
+<li><a href="https://github.com/EOSIO/eos/tree/master/contracts/eosio.system" target="_blank" rel="noopener">system合约</a></li>
+<li><a href="https://github.com/EOSIO/eos/tree/master/contracts/eosio.bios" target="_blank" rel="noopener">bios合约</a></li>
+</ul>
+<h3 id="3-EOS宪法"><a href="#3-EOS宪法" class="headerlink" title="3. EOS宪法"></a>3. EOS宪法</h3><p>EOS宪法阐述了EOS系统中的很多基本理念，对于开发者来说，尤其需要关注的是有关仲裁（条款3）和开发者和智能合约（条款11）的条款。与以太坊中不同的是，在EOS中，并不完全认同Code is law，而是认为需要仲裁来解决问题。EOS上的任何智能合约都需要提供一份许可证和一份或多份李嘉图合约，因此你也额外需要了解什么是仲裁法庭，许可证，李嘉图合约。</p>
+<ul>
+<li><a href="https://forums.eosgo.io/profile/discussions/9/thomasbcox" target="_blank" rel="noopener">宪法草案 - 英文版</a></li>
+<li><a href="https://forums.eosgo.io/profile/discussions/834/laughing_always" target="_blank" rel="noopener">宪法草案 - 中文版</a></li>
+<li><a href="https://www.jianshu.com/p/3b45c92e86af" target="_blank" rel="noopener">什么是李嘉图合约 - 中英对照</a></li>
+<li><a href="http://webfunds.org/ricardo/contracts/" target="_blank" rel="noopener">李嘉图合约示例</a></li>
+</ul>
+<h3 id="4-节点设置，钱包管理"><a href="#4-节点设置，钱包管理" class="headerlink" title="4. 节点设置，钱包管理"></a>4. 节点设置，钱包管理</h3><p>对于刚开始接触的程序员来说，需要先设置自己的EOS节点并了解相关指令。EOS的wiki里给出了最详细的步骤。</p>
+<p>不过有一个更方便的选择是采用eosjs里的docker运行脚本，不仅一键运行节点，还加载了一部分智能合约，并进行了代币的初始分配。</p>
+<ul>
+<li><a href="https://github.com/EOSIO/eos/wiki" target="_blank" rel="noopener">设置节点</a></li>
+<li><a href="https://github.com/EOSIO/eosjs/tree/master/docker" target="_blank" rel="noopener">eosjs docker</a></li>
+</ul>
+<h3 id="5-智能合约开发"><a href="#5-智能合约开发" class="headerlink" title="5. 智能合约开发"></a>5. 智能合约开发</h3><p>目前eos的智能合约开发以C++为主，有一些社区项目在将solidity之类的智能合约语言搬过来，但最方便的还会是c++。</p>
+<ul>
+<li><a href="https://github.com/EOSIO/eos/wiki/Smart%20Contract" target="_blank" rel="noopener">智能合约开发教程</a></li>
+<li><a href="https://eosio.github.io/eos/" target="_blank" rel="noopener">合约文档</a></li>
+</ul>
+<h3 id="6-几个建议"><a href="#6-几个建议" class="headerlink" title="6. 几个建议"></a>6. 几个建议</h3><ul>
+<li>EOS Go上的讨论会参考注册时间和拥有积分的天数（类似于币天的概念），因此最好早点注册一个账号。</li>
+<li>国内可以关注IMEOS社区。</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://starit.me/2018/02/15/2017-review/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -249,9 +424,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/02/15/2017-review/" itemprop="url">我的2017回顾</a></h1>
+                <a class="post-title-link" href="/2018/02/15/2017-review/" itemprop="url">我的2017回顾</a></h2>
         
 
         <div class="post-meta">
@@ -391,9 +566,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/12/31/2016-review/" itemprop="url">我的2016回顾</a></h1>
+                <a class="post-title-link" href="/2016/12/31/2016-review/" itemprop="url">我的2016回顾</a></h2>
         
 
         <div class="post-meta">
@@ -547,9 +722,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/05/01/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/2015/05/01/hello-world/" itemprop="url">Hello World</a></h2>
         
 
         <div class="post-meta">
@@ -673,7 +848,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Starit</p>
-              <p class="site-description motion-element" itemprop="description">星魂的个人博客</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -681,9 +856,9 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -696,7 +871,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -713,6 +888,18 @@
                     <a href="https://github.com/starit" target="_blank" title="GitHub">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:starit@vip.qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/star_cry" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
                   </span>
                 
             </div>
