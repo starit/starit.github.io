@@ -1,85 +1,52 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.6.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
 
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://starit.me').hostname,
+    root: '/',
+    scheme: 'Muse',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
 
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="EOS, BitPortal, blockchain, ethereum, bitcoin, Jamie Cheng, Starit" />
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="星魂的个人博客">
+  <meta name="description" content="星魂的个人博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="群星尽头">
 <meta property="og:url" content="http://starit.me/index.html">
@@ -90,39 +57,17 @@
 <meta name="twitter:title" content="群星尽头">
 <meta name="twitter:description" content="星魂的个人博客">
 
+<link rel="canonical" href="http://starit.me/">
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Mist',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://starit.me/"/>
-
-
-
-
 
   <title>群星尽头</title>
   
@@ -132,175 +77,136 @@
 
 
 
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
 
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+    <div>
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">群星尽头</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <h1 class="site-subtitle" itemprop="description">科学与艺术的那个交集</h1>
-      
+        <p class="site-subtitle">科学与艺术的那个交集</p>
   </div>
 
   <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
   </div>
 </div>
 
+
 <nav class="site-nav">
   
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
-            
-            站点地图
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
-  
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
 </nav>
-
-
-
- </div>
+</div>
     </header>
 
-    <main id="main" class="main">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content">
+          
+
+          <div class="content">
             
-  <section id="posts" class="posts-expand">
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <div class="posts-expand">
+        
   
   
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://starit.me/2018/05/02/learning_eos_0/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://starit.me/2020/12/31/2020-review/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Starit">
-      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Starit">
+      <meta itemprop="description" content="星魂的个人博客">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="群星尽头">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/02/learning_eos_0/" itemprop="url">EOS学习0: 资料来源和阅读顺序</a></h2>
-        
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/31/2020-review/" class="post-title-link" itemprop="url">我的2020回顾</a>
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T08:07:00+08:00">
-                2018-05-02
-              </time>
-            
+              <span class="post-meta-item-text">Posted on</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Created: 2020-12-31 23:22:09" itemprop="dateCreated datePublished" datetime="2020-12-31T23:22:09+08:00">2020-12-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-01-01 01:05:39" itemprop="dateModified" datetime="2021-01-01T01:05:39+08:00">2021-01-01</time>
+              </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -308,12 +214,271 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
+          <h2 id="我的2020"><a href="#我的2020" class="headerlink" title="我的2020"></a>我的2020</h2><ul>
+<li>只是记录给自己看的一些文字和语言，没有优化过 </li>
+<li>当下的一些思绪片段，不是全部</li>
+<li>很多文字并不是表面看上去的意思，请不用当真</li>
+</ul>
+<p>在恍惚中，时间已经走到了2020年的最后一两个小时。这种快进的速度，让我对当下总是产生很强烈的不真实的感觉。自己总是还有种时间还在一两年前的感觉，一方面，这两年对于自己实在没什么大的进展，一方面想要达成的事情阻塞在某一个地方，好像就永远停滞在那里了。</p>
+<p>即便如此，很多时候还是很庆幸和满足的；在成长的路上，得益于很多人的帮助和自己在一些选择上的坚持，始终还是在一些事情上保持认知上足够的提前和优势。虽然因为各种原因，这种优势没能转换最终实际的难以替代的优势，但是个人还是挺享受这个过程。至于起了个大早，赶了个晚集这种事情，也不是第一次了，所以对于自己也无需强求。</p>
+<h3 id="偏执，平衡"><a href="#偏执，平衡" class="headerlink" title="偏执，平衡"></a>偏执，平衡</h3><p>毫无疑问，对于当下的自己而言，大量的时间其实都花费在具体的某一个行业了。空闲下来的时候会反复和自己确认，现在的投入是否是最佳的选择呢？是否会因此而错失一些原本应该去完善和成长的路线呢？</p>
+<p>我想答案同时是 是 和 否 。即，对于行业来说，目前有足够多有趣的事情正在发生，而且经历这个有趣的过程同时，还能从中获得极大的成长，同时还拿到了不少的溢价，我想我是不后悔的；但是对于自己具体的某些选择，我想有太多浪费的地方，这些时间，最坏的情况，有本该可以用到一些其他更有意义的事情上，不管是行业内还是行业外，抑或是个人的健康，情感上。</p>
+<h3 id="合作，信任与误解"><a href="#合作，信任与误解" class="headerlink" title="合作，信任与误解"></a>合作，信任与误解</h3><p>这两年陆续和一些人有一些深度的合作，有一些给人以惊喜，而最主要的是以失望告终。而且一些无谓的信任还给自己带来不少麻烦。不仅仅是财物和应得的损失，还有错过的时间机会。这种错付，很多时候可能在别人心里很清楚自己的选择就像个傻子，但对于自己来说则是想要偏执地去验证某些单纯的信任关系。很可笑的是，这种信任最终都是被扔到地上去的。于是自己心里也很清楚，某些人看上去光鲜的人设和情怀，也可以扔到垃圾桶里去了。</p>
+<p>其实某种程度上来说，最终都还是自己的责任。信任了错误的人，或者违背了自己的原则去妥协某些事情。从小到大，我发现自己在一些事情坚持久了就会有放松的想法，而每次选择上的放松都给自己带来了很大的损失。引以为戒吧。</p>
+<p>对于自己很大的教训是，尽量还是和自己熟悉有把握的范畴内和人合作。和相处得开心的人在一起，才有点意思。</p>
+<p>而由此造成的一些外部的误解，也只有时间能消除了。</p>
+<h3 id="自我价值与感受"><a href="#自我价值与感受" class="headerlink" title="自我价值与感受"></a>自我价值与感受</h3><p>其实内心很清楚的是，受早先一些能够定义<code>who you are</code>的事情的影响，以及长期以来的抑郁的影响，自己永远是会把自己放到一个相对较低的位置的。这种事情有时候体现出来的是在一些选择上的悲观与谨慎。</p>
+<p>这就会导致，有时候明明清楚自己在做的事情的价值，而且别人也清楚自己在做的事情的价值，但是自己很容易会保持在一个低价值位与人合作。这也是很多时候，事情无法取得突破的原因。</p>
+<p>对于这个，其实自己并没有什么特别好的办法；也没有太多怨言可言，毕竟很多方面而言，自己已经是足够幸运了。</p>
+<h3 id="敬畏"><a href="#敬畏" class="headerlink" title="敬畏"></a>敬畏</h3><p>敬畏市场，敬畏家国，敬畏时间。</p>
+<h3 id="努力"><a href="#努力" class="headerlink" title="努力"></a>努力</h3><p>有很多缺点，有很多没完成的事情和想法，希望新的一年，能有始有终。</p>
+<h3 id="能力"><a href="#能力" class="headerlink" title="能力"></a>能力</h3><p>和国外的团队开了一年的英文会议，虽然感觉英语也没提升多少，但还是有一定进步吧；此外在负责一个团队的事情上更有经验了，虽然，区块链的小团队还是很依赖于单兵作战能力。</p>
+<p>其实在纯粹的技术和team leadship上，目前已经没有太多的欲望去成长了，感觉该体验的都体验过了。我想更重要的是，自己想要做什么事情呢？</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>这次也就说了一些有的没的，也没有像之前一样遵循scrum的规范来，因为那一套了然于胸后，觉得也就那样了。更重要的是，当沟通的壁垒大到常规沟通无法解决的时候，常规沟通无非是再浪费时间。</p>
+<p>另一个方面，可能也因为自己的生活，也不是那么再受形式所困，就没有那么大的意义了。</p>
+<p>时间总是很宝贵，一点一滴的过去，改造着我，和所有人。</p>
+<p>而一年后的自己，又会是什么样子呢？</p>
 
       
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
         
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://starit.me/2019/12/30/2019-review/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Starit">
+      <meta itemprop="description" content="星魂的个人博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="群星尽头">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
           
-            <p>最近在研究EOS，整理了一下相关的资料来源和我认为合适的阅读顺序，分享出来，以便想要了解EOS的朋友们参考。资料主要以英文为主，中文翻译在网上翻一下就能找到，但或多或少都有些翻译不到位的地方，因此建议有能力的话以阅读英文文档为主。</p>
+            <a href="/2019/12/30/2019-review/" class="post-title-link" itemprop="url">我的2019年回顾</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-12-30 04:05:07" itemprop="dateCreated datePublished" datetime="2019-12-30T04:05:07+08:00">2019-12-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-26 22:39:34" itemprop="dateModified" datetime="2020-02-26T22:39:34+08:00">2020-02-26</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="我的2019年回顾"><a href="#我的2019年回顾" class="headerlink" title="我的2019年回顾"></a>我的2019年回顾</h2><p>2019年之于我，感觉是过得特别快的一年。相较于之前，我好像更加在依靠惯性生活，没有在朝着一些自己觉得比较大的根本性的改变努力。我想这不是一个好兆头，希望未来慢慢做一些调整，有一些新的突破。</p>
+<p>我会改变之前写回顾的模式化的方式，主要是觉得厌倦了，希望有些新的做法。</p>
+<h3 id="Polkadot与Defi之年"><a href="#Polkadot与Defi之年" class="headerlink" title="Polkadot与Defi之年"></a>Polkadot与Defi之年</h3><p>在专业上，其实一整年就是在关注Polkadot与Defi的发展。在钱包和区块链的开发上更进一步，虽然没有造成特别大的影响力，但是对于自己的成长是一个不错的开始。</p>
+<p>Polkadot一直都是行业内很受关注的项目，Gavin作为ETH的联合创始人从</p>
+<p>很幸运的是，有好几次与Gavin wood当面互动的机会，甚至坐在一起参加了一次圆桌（Polkadot北京行），一起吃了一次午餐。一方面足以见得Polkadot或者说Web 3 Fondation对开发者的重视。不过我对自己的表现不甚满意，有很多有价值的想法没有得到很好的传达，一些好的机会也没有机会被认真的思考和贯彻。</p>
+<p>最被浪费的其实是6-9这三个月的时间，回过头来也不知道当时在做什么。本该从中快速学习成长，同时占据Substrate/Polkadot生态中一个有利的位置。结果起了一个大早，赶了一个晚集（还不一定算赶上了）。一方面可能做的事情太杂，一方面可能有些深度思考过的想法没有得到很好的实施（可能需要一个团队的支持），而我暂时没有想法怎么去比较好的解决资金的问题。然后有一部分精力还被放在处理新的团队中其他的业务开发需求上（网页，中心化钱包等）。</p>
+<p>…</p>
+<p>在思考的是，中国的社区其实不缺乏优秀的开发者，但这些开发者大多需要寄托于资本的庇护下。要么作为员工工作，要么作为受资本支持的项目方。这里说的资本，是一个广泛的概念。</p>
+<h3 id="延续的创业"><a href="#延续的创业" class="headerlink" title="延续的创业"></a>延续的创业</h3><p>19年前几个月和Terence一直在继续BitPortal的开发，同时散漫地生活着。然后在第一时间支持了ChainX的上线，成为第一批支持ChainX的移动端钱包。</p>
+<p>四月份的时候，C和M回到国内。M算是我在行业内的领路人，我也很愿意追随他一起做事情，所以和他们保持着密切的沟通。后来C主导，成立了Definex团队。BitPortal这边也就暂时暂停了，然后保持一个维护状态。后续主要精力都在Definex。</p>
+<p>Definex的目标其实不是很明确，对于我而言这样做有两个很明确的目的，一是能与M一起做事情，一是C的运营很不错，而之前的经验让我感觉在国内好的运营的缺失产品很难很好地运营下去。</p>
+<p>…</p>
+<h3 id="持续下滑的健康状态"><a href="#持续下滑的健康状态" class="headerlink" title="持续下滑的健康状态"></a>持续下滑的健康状态</h3><p>本来，一直想找一个时间继续做完之前的健康检查的，但是一直犯懒，怕麻烦没有做。慢慢明显感觉到，身体的各个方面状态都在持续下降。要警觉起来哦～～</p>
+<h3 id="新的朋友"><a href="#新的朋友" class="headerlink" title="新的朋友"></a>新的朋友</h3><p>认识了挺多新的朋友，尤其是一些二次元社区的朋友。以前对B站还没有这么有好感，现在发现B站真是个好地方，很容易认识一些高质量的朋友～</p>
+<p>在未来有机会可以成为一个UP主！</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>感觉就自己的整体状态而言，从居住证没有续期开始就在一直下滑（误）。</p>
+<p>其实是，给自己找了很多包袱去背，开始焦虑就没有那么轻松了，2019年默默工作了一年，也想好应该慢慢给自己卸包袱，才能够按照自己想要的方式走下去。</p>
+<p>加油呐，还是要努力成为自己想要的人。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://starit.me/2019/03/03/2018-review/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Starit">
+      <meta itemprop="description" content="星魂的个人博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="群星尽头">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/03/03/2018-review/" class="post-title-link" itemprop="url">我的2018年回顾</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-03-03 21:50:55" itemprop="dateCreated datePublished" datetime="2019-03-03T21:50:55+08:00">2019-03-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-12-31 23:52:53" itemprop="dateModified" datetime="2020-12-31T23:52:53+08:00">2020-12-31</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>不知不觉，2018年就已经离我们远去了。这一年经历了疯狂与失落，也是最为努力和很受挫败的一年。对于我来说，这是一个特别的年份，经历了很多转变，对自己的成长，处事方式都有不少影响。</p>
+<p>然而，事实就是最好的赠与。这一切也让我回归到自己最初的行事方式和原则。</p>
+<h2 id="记事"><a href="#记事" class="headerlink" title="记事"></a>记事</h2><h3 id="1-初起"><a href="#1-初起" class="headerlink" title="1. 初起"></a>1. 初起</h3><p>2018年年初，数字货币行业的泡沫走到了高点。比特币价格达到新高的同时，众多山寨币兑比特币的价格也达到了一个前所未有的高点。</p>
+<p>趁着这波牛市，我也被LQ邀请去与他的公司一起组建一个团队，希望能在尽量合规的前提下融到一笔资金。我提供技术，他们提供资本的思路以及运营的技巧。虽然相处下来觉得他们的处事方式有点”Low“，但是还是挺具有诚意的，而且双方互补性很强。</p>
+<p>最早他们是拉了另外一位合伙人作为主导，想做基于zstp(拼音缩写)的区块链。对于这个方向，我们在一起开了几次研讨会，深入讨论了细节，我提供了一些技术上的建议，也得到了很不错的反馈（毕竟对于区块链技术本身，当时自身的认识在国内还是很少有能比的）。虽然我在原则上并不看好非“密码极客”方式出现的公有链，但一方面这个项目确实涵盖着不少有意思的事情，一方面也确实在以市场的角度在考虑问题：如果要创业，显然是应该在当前牛市的情况下有所操作；何况其实自身确实是这个领域内少有的“专家”。然而这样的三方合作最后以主导的合伙人担心“合规”风险以及“资金预算”风险而退出了。虽然资金触手可及，而且相比其他的项目，我们计划的做法也已经是极其良心了。但是毕竟是书生，不愿意冒任何风险和良心上的隐忧（即便在资本市场，帮人打工只是一种利益无关的掩饰）。</p>
+<p>于是这件事情便变成了我来主导，由我组建团队和提供idea。我一开始也是接受的，找了几位前同事一起，头脑风暴出一些想法。但几位同事极力反对与之前的这家公司开始合作，一方面是因为我们当时觉得，他们能提供的资源，我们其实也有，有些甚至更好（后来证明我们不一定能充分利用这些资源，毕竟更多擅长技术而非谈判），但更重要的原因是我的这些前同事们非常不太喜欢与他们打交道，双方的团队基因并不匹配。</p>
+<p>于是这件事情就变成了，我们团队从那边独立出来开始自己运营。我写了第一份白皮书（这份白皮书其实现在看来还是挺不错的，在逻辑上预见了Defi的诞生）。在没有做宣传的情况下找几位朋友聊了聊，拿到了最初的500 ETH 投资。并且将办公室租用起来。彼时ETH价格为800刀左右，按市场价值也挺高的了。但很可惜我们并没有做套现的操作。</p>
+<p>于是，就这样，我的第一次创业之旅就开始了。创业也就成了我这一年的主旋律。</p>
+<h3 id="2-发展"><a href="#2-发展" class="headerlink" title="2. 发展"></a>2. 发展</h3><p>最开始，我们是打算在ETH上进行开发，核心的思路是做链上结算的DEX，因为我们看好完全链上的操作，虽然彼时链上能做的应用场景有限，不过区块链要发展起来，链上操作会越来越多，而DEX将会是核心。当时想先尽快做出一款客户端的产品，以拥有一个面向终端用户的产品同时获取一批种子用户。同时当时以为，因为有实际的产品，也可以帮助我们区别于普通空气项目（后来明白这个思路是错的，因为时机比一切都重要）。</p>
+<p>最重要的是，我很清楚我们团队的优势并不在于短期需要运营可以拼出胜负的项目上，因为执行力也好，意愿也好，资源也好，很难和一些现有的团队去比。我们真正的机会在于，找到一条细分赛道，并足够提前和核心，然后能够超前布局，并持续占据优势。等到浪潮起来，才可以发挥出我们的优势；而这个选择，顺着纯粹区块链的思维，再往下加一层的逻辑，便很容易找到 - 链上的流动性都是公开的，因此实际上是可以在合约层复用的，因此这里需要添加一层，用于将所有底层的流动性向上进行抽象；因此我们要做的，不是与当下的dex团队竞争，而是将他们底层化，衔接他们与上层，作为上层单一可靠的入口。我称之为，dex上的dex。</p>
+<p>不过后面有发生了很多事情，一方面是ETH热度明显转凉，然后EOS的社区声量在起来。在很长一段时间内，其实我是故意忽略EOS的，因为我清楚地知道BM这个人的劣迹。但是在当时的时间点上，和ChainPool团队进行了一次深入沟通后，我临时决定路线由ETH变成先EOS再ETH。这样的好处是，可以见证一条高性能的链，在实际运营中，会产生什么样的新的应用和效应；一方面可以先储备一些种子用户，再杀回ETH，这样比单纯和imToken竞争要好很多。</p>
+<p>后续还发生了很多事情，简单来说的话就是：</p>
+<ul>
+<li><p>BitPortal的上线，相比晚了一点</p>
+</li>
+<li><p>开发版本的分叉，导致内部资源的大量错配，迭代效率极低</p>
+</li>
+<li><p>行情一再变熊，没有拿到进一步融资，融资接近烧光</p>
+</li>
+<li><p>团队危机与部分解散</p>
+</li>
+</ul>
+<h3 id="3-转变"><a href="#3-转变" class="headerlink" title="3. 转变"></a>3. 转变</h3><p>应对的方式就只能是，潜伏 + 等待了。所幸个人并没有留下个人层面的债务，自己也还有足够的储备能够照顾好自己。最大的可惜则是，由此错过了可能是这段时间里最好的机会。</p>
+<p>只能，未来再见吧。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>现在看来，2018年本应最佳的应对策略，应该是趁着牛市的泡沫还在，大量套现自己的资产，然后转行做其他事情或者开始休息。哪怕是在完全控制好成本的情况下开始创业。</p>
+<p>其实机会还是很多的，但是并没有很好的抓住。一方面是自己依旧是开发者的心态，大量精力投入在开发上，又没有好的融资伙伴。导致事情最终走向破灭。但对于我来说也是一次很深刻的经验教训。</p>
+<p>希望未来一切都会好吧。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://starit.me/2018/05/02/learning_eos_0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Starit">
+      <meta itemprop="description" content="星魂的个人博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="群星尽头">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/05/02/learning_eos_0/" class="post-title-link" itemprop="url">EOS学习0: 资料来源和阅读顺序</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-05-02 08:07:00" itemprop="dateCreated datePublished" datetime="2018-05-02T08:07:00+08:00">2018-05-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-12-30 13:53:18" itemprop="dateModified" datetime="2019-12-30T13:53:18+08:00">2019-12-30</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>2019补充更新：</p>
+<p>以下很多资料都过时了，是当时学习时整理的资料，而且EOS本身也有点过时了，我目前看好的依旧是BTC，ETH，Polkadot生态。EOS本身不再推荐。</p>
+<hr>
+<p>最近在研究EOS，整理了一下相关的资料来源和我认为合适的阅读顺序，分享出来，以便想要了解EOS的朋友们参考。资料主要以英文为主，中文翻译在网上翻一下就能找到，但或多或少都有些翻译不到位的地方，因此建议有能力的话以阅读英文文档为主。</p>
 <h2 id="资料来源"><a href="#资料来源" class="headerlink" title="资料来源"></a>资料来源</h2><p>其中主要的信息来源是官网或半官方性质的社区：</p>
 <ul>
 <li><p><a href="https://eos.io/" target="_blank" rel="noopener">EOS官网</a></p>
@@ -360,112 +525,62 @@
 <li>国内可以关注IMEOS社区。</li>
 </ul>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
-
-
-    
-      
-
-  
-
   
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+        
   
   
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
     <link itemprop="mainEntityOfPage" href="http://starit.me/2018/02/15/2017-review/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Starit">
-      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Starit">
+      <meta itemprop="description" content="星魂的个人博客">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="群星尽头">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/15/2017-review/" itemprop="url">我的2017回顾</a></h2>
-        
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/02/15/2017-review/" class="post-title-link" itemprop="url">我的2017回顾</a>
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-15T19:37:02+08:00">
-                2018-02-15
-              </time>
-            
+              <span class="post-meta-item-text">Posted on</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Created: 2018-02-15 19:37:02" itemprop="dateCreated datePublished" datetime="2018-02-15T19:37:02+08:00">2018-02-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-01-01 00:11:41" itemprop="dateModified" datetime="2021-01-01T00:11:41+08:00">2021-01-01</time>
+              </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -473,12 +588,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
-        
-          
-            <h2 id="我的2017回顾"><a href="#我的2017回顾" class="headerlink" title="我的2017回顾"></a>我的2017回顾</h2><p>不知不觉又是一年过去了，去年写回顾的时候，感觉就好像昨天一样。虽然这一年发生了很多事情，自己的境遇和外界的状况都大不一样了，然而内心却没有太大的感觉。除了老了一岁，似乎自己的基本情况并没有太大的不同，从这方面来说，似乎有点悲哀。<br>工作方面，区块链真的是火到不能再火了，作为行业从业者，却反而感到一些心慌。当越来越多优秀的人进入到这个行业，自己的先发优势也就小了，这也加重了我要做点什么才行的焦虑感。</p>
+          <h2 id="我的2017回顾"><a href="#我的2017回顾" class="headerlink" title="我的2017回顾"></a>我的2017回顾</h2><p>不知不觉又是一年过去了，去年写回顾的时候，感觉就好像昨天一样。虽然这一年发生了很多事情，自己的境遇和外界的状况都大不一样了，然而内心却没有太大的感觉。除了老了一岁，似乎自己的基本情况并没有太大的不同，从这方面来说，似乎有点悲哀。<br>工作方面，区块链真的是火到不能再火了，作为行业从业者，却反而感到一些心慌。当越来越多优秀的人进入到这个行业，自己的先发优势也就小了，这也加重了我要做点什么才行的焦虑感。</p>
 <h2 id="大事记"><a href="#大事记" class="headerlink" title="大事记"></a>大事记</h2><p>2017年6月，我离开了BTCC，在职时间2年零2个月。<br>2017年6月17日 - 7月2日，与Terance一起去美国西部旅游。<br>2017年7月，加入TokenCapital。<br>2017年10月，与Ray组织了第一场SHBD活动，并上线了官网<a href="http://shbd.io/。" target="_blank" rel="noopener">http://shbd.io/。</a><br>2017年12月，参与朋友组织的日本东京行，考察了日本的区块链行业状况。</p>
 <p>中间其实有过一些不同方向的尝试，因为没公开因此也不为人知。我是耐性比较差的人，有些事情看到了趋势却懒得靠自己的力量做下去，或者缺乏团队支撑，因此无法做得很完善。新的一年，我会开始认真组建自己的团队，依靠团队的力量，希望能做一些对行业发展有用的事情。</p>
 <h2 id="2016年的展望"><a href="#2016年的展望" class="headerlink" title="2016年的展望"></a>2016年的展望</h2><p>上一篇回顾里，对2017的希望是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">工作更自动化一点</span><br><span class="line">养成锻炼的习惯</span><br><span class="line">读更多书籍，去更多地方，思考更多</span><br><span class="line">写更多文字</span><br></pre></td></tr></table></figure></p>
@@ -488,7 +598,7 @@
 <li>财富在难以置信地增长，感谢这波狂潮，但内心还是保持平常</li>
 <li>认识了更多社区的朋友</li>
 </ul>
-<h3 id="What-did’t-went-well（坏事）"><a href="#What-did’t-went-well（坏事）" class="headerlink" title="What did’t went well（坏事）"></a>What did’t went well（坏事）</h3><ul>
+<h3 id="What-did’t-go-well（坏事）"><a href="#What-did’t-go-well（坏事）" class="headerlink" title="What did’t go well（坏事）"></a>What did’t go well（坏事）</h3><ul>
 <li>姐姐得了比较严重的疾病（iga肾炎），后来又股骨头坏死需要手术，祈祷她尽快好起来</li>
 <li>经历了一些恶心的办公室政治，却也从中学到一些东西</li>
 <li>身体依旧处于亚健康状态，却不经常锻炼</li>
@@ -502,112 +612,62 @@
 </ul>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>每到晚上安静下来的时候，就有无比深刻的想念。时间一秒一秒地流逝，这是最好的时光。亦可惜自己还没调整到最佳的状态来面对：机会太多，时间不够用，心态没准备好，身体没调整过来。这大约就是我现在的写照了，但也只好更加努力地向前，即便可能结果没有达到内心深处的预期。<br>随着年龄的长大，除了陪伴在身边的人，距离似乎都在变得更加遥远；大部分人都维持着一年见一到两次的频率，每次见面也就够同步一下双方的状态；年少的那股对友谊的执着，终究是慢慢被现实的事业心代替了。只愿自己永远维持初心，那样才能不迷失方向。<br>感谢动荡市场中的每一份幸运，感谢困难之中的每一份援助，感谢相处时的每一份信任；被很多美好围绕着，现在的自己才没有变得更差，感谢。<br>亲爱的朋友，新的一年，请继续陪伴我走下去。</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
-
-
-    
-      
-
-  
-
   
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+        
   
   
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
     <link itemprop="mainEntityOfPage" href="http://starit.me/2016/12/31/2016-review/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Starit">
-      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Starit">
+      <meta itemprop="description" content="星魂的个人博客">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="群星尽头">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/12/31/2016-review/" itemprop="url">我的2016回顾</a></h2>
-        
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2016/12/31/2016-review/" class="post-title-link" itemprop="url">我的2016回顾</a>
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-31T23:22:09+08:00">
-                2016-12-31
-              </time>
-            
+              <span class="post-meta-item-text">Posted on</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Created: 2016-12-31 23:22:09" itemprop="dateCreated datePublished" datetime="2016-12-31T23:22:09+08:00">2016-12-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2018-03-11 04:54:11" itemprop="dateModified" datetime="2018-03-11T04:54:11+08:00">2018-03-11</time>
+              </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -615,12 +675,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
-        
-          
-            <h2 id="我的2016"><a href="#我的2016" class="headerlink" title="我的2016"></a>我的2016</h2><p>不知道不觉就踩在了2016年的尾巴上，以前年末的时候早早就写好了回顾，今年却真的是赶在跨年的时候——离北京时间2016年结束还有1个半小时，希望我能赶在2017年前能写完这篇回顾吧。</p>
+          <h2 id="我的2016"><a href="#我的2016" class="headerlink" title="我的2016"></a>我的2016</h2><p>不知道不觉就踩在了2016年的尾巴上，以前年末的时候早早就写好了回顾，今年却真的是赶在跨年的时候——离北京时间2016年结束还有1个半小时，希望我能赶在2017年前能写完这篇回顾吧。</p>
 <p>其实逝者如斯夫，不舍昼夜，时间的流逝并没有什么阶段之分，只是人们为了计量才分出年月日时分秒，而不同的划分方法对时间的计量方式其实又不一样；所以从某种程度来说，这种跨年其实也并没有太大的意义，只是符号上的一个变化而已。</p>
 <p>然而就像软件开发里Scrum模式所提倡的一样，也许你的计划可以变，但尽可能确定在这一个短期内的计划是不变的，这样你才可以向这个目标冲刺，这样也才使得按年的计划与回顾有意义吧。</p>
 <h2 id="去年的展望"><a href="#去年的展望" class="headerlink" title="去年的展望"></a>去年的展望</h2><p>我去翻了一翻我去年的回顾，好的就都不说了，看看坏的地方是不是变好点了，以及值得提升的地方是不是做到了。</p>
@@ -658,112 +713,62 @@
 <p>再见，2016年的Starit；再见，2016年的朋友们：）</p>
 <p>放心，我还是会怀抱着自己的信仰，用最好的姿态，生活下去。</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
-
-
-    
-      
-
-  
-
   
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+        
   
   
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
     <link itemprop="mainEntityOfPage" href="http://starit.me/2015/05/01/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Starit">
-      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Starit">
+      <meta itemprop="description" content="星魂的个人博客">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="群星尽头">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/05/01/hello-world/" itemprop="url">Hello World</a></h2>
-        
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2015/05/01/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-05-01T00:00:00+08:00">
-                2015-05-01
-              </time>
-            
+              <span class="post-meta-item-text">Posted on</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Created: 2015-05-01 00:00:00" itemprop="dateCreated datePublished" datetime="2015-05-01T00:00:00+08:00">2015-05-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2018-03-11 04:57:08" itemprop="dateModified" datetime="2018-03-11T04:57:08+08:00">2018-03-11</time>
+              </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -771,187 +776,149 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
+          <p>Hello,World</p>
 
-      
-        
-          
-            <p>Hello,World</p>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
+  
+  
+  
 
-
-    
-  </section>
+  </div>
 
   
+
 
 
           </div>
           
 
-
-          
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
-        
           
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
 
-  <aside id="sidebar" class="sidebar">
-    
+  <aside class="sidebar">
     <div class="sidebar-inner">
 
-      
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
 
-      
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">Starit</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Starit</p>
+  <div class="site-description" itemprop="description">星魂的个人博客</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/starit" title="GitHub → https://github.com/starit" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:starit1992@gmail.com" title="E-Mail → mailto:starit1992@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
 
-          <nav class="site-state motion-element">
 
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives">
-              
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://starit.me" title="http://starit.me">Title</a>
+        </li>
+    </ul>
+  </div>
 
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">标签</span>
-                
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/starit" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:starit@vip.qq.com" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/star_cry" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
+      </div>
 
     </div>
   </aside>
+  <div id="sidebar-dimmer"></div>
 
 
-        
       </div>
     </main>
 
-    <footer id="footer" class="footer">
+    <footer class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Starit</span>
-
-  
 </div>
-
-
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.6.0
+  </div>
   <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
-
-
-
+  <div class="theme-info">Theme – <a href="https://muse.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.6.0
+  </div>
 
         
 
@@ -961,34 +928,18 @@
 
 
 
-        
+
       </div>
     </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
   </div>
 
   
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
 
 
 
@@ -1005,107 +956,8 @@
 
 
 
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
 
 
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
 
   
 
