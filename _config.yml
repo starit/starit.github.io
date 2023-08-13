@@ -104,3 +104,9 @@ theme: oliver
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+excerpt:
+  depth: 10
+  excerpt_excludes: []
+  more_excludes: []
+  hideWholePostExcerpts: true
