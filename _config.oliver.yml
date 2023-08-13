@@ -1,0 +1,15 @@
+favicon: "https://s2.loli.net/2023/05/18/BZKr7FOfouM1Wpb.jpg"
+avatar: "https://s2.loli.net/2023/05/19/cDZfFvuHyTSNOKI.jpg"
+
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+
+copyright: copyright
+
+gitalk:
+  client_id: 4922669aa03c351fe839
+  client_secret: bf07adc236fe2e657ff9d6b3967cfea4a1ac4ef7
+  repo: https://github.com/starit/starit-me-comments
+  owner: starit
