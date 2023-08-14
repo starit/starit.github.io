@@ -106,7 +106,7 @@ deploy:
   type: ''
 
 excerpt:
-  depth: 10
+  depth: 1
   excerpt_excludes: []
   more_excludes: []
   hideWholePostExcerpts: true
