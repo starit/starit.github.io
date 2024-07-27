@@ -4,7 +4,7 @@ date: 2023-08-12 13:59:18
 ---
 
 
-Jamie C. Fomer BTCChina, BitPortal.
+Jamie C. Former BTCChina, BitPortal.
 
 Fullstack developer with tech leader experience.
 

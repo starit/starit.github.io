@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Starit
+title: Starit - twinkle twinkle little star
 subtitle: 'In Math We Trust'
 description: "Starit's personal website"
 keywords: 'starit, starit.eth'
@@ -106,7 +106,7 @@ deploy:
   type: ''
 
 excerpt:
-  depth: 1
+  depth: 2
   excerpt_excludes: []
   more_excludes: []
   hideWholePostExcerpts: true
