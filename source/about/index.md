@@ -26,7 +26,8 @@ Fullstack developer with tech leader experience.
 * [[AttestCaster]](https://github.com/AttestCaster/): AttestCaster is a simple solution for issuing and managing attestations with `sign protocol` in the form of a client application for Farcaster, the leading decentralised social network protocol in the world.
   Role: team leader and core developer
 
-* [[Uniswap V4 Subsgraph - Unikits]](https://github.com/UniKits-Dev/uniswap-v4-subgraph): The first community version of Uniswap V4 subgraph.
+* [[Uniswap V4 Subsgraph - Unikits]](https://github.com/UniKits-Dev/uniswap-v4-subgraph): The first community version of Uniswap V4 subgraph. 
+  Received the "Best New Subgraph or Substream” grand on ETHGlobal NY 2023 hackathon.
   Role: Team leader, idea provider and technical support
 
 * [[Shorum Contract]](https://github.com/starit/shorum-contracts): An `Lens Protocol` fork and extension of NFT marketplace. It is for the demo usage in ETH Shanghai Hackathon 2022. A `create2` based factory contract is created in this project. Subgraph and front-end are also developed. This project has never been launched on mainnet.
